@@ -22,6 +22,12 @@ app.post('/webhook', (req, res) => {
     res.sendStatus(200);
 });
 
+app.get('/', (req, res) => {
+    return res.send({
+        message: "Welcome to an's bot"
+    })
+});
+
 // Xử lý các lệnh
 bot.onText(/^Done: (.+)/i, (msg, match) => {
     taskHandlers.deleteTaskByContent(msg, match[1], bot);
