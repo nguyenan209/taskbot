@@ -23,7 +23,7 @@ app.post('/webhook', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    return res.send({
+    return res.statusCode(200).send({
         message: "Welcome to an's bot",
     });
 });
