@@ -25,7 +25,7 @@ app.post('/webhook', (req, res) => {
 app.get('/', (req, res) => {
     return res.send({
         message: "Welcome to an's bot"
-    })
+    });
 });
 
 // Xử lý các lệnh
