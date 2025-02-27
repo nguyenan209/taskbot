@@ -5,7 +5,7 @@ const connectDB = require('../config/database');
 const taskHandlers = require('../handlers/taskHandlers');
 
 const token = '7969158574:AAEe1btSBENJVYRCJciEVcSEbKQWDPuq5gk';
-const bot = new TelegramBot(token, {polling: true});
+const bot = new TelegramBot(token);
 const app = express();
 
 const CHAT_ID = 'YOUR_CHAT_ID_HERE'; // Thay bằng chat ID thực tế của bạn
