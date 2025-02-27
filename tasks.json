@@ -1,0 +1,62 @@
+[
+  {
+    "id": 2,
+    "platform": "iOS",
+    "content": "Update giao diện login"
+  },
+  {
+    "id": 3,
+    "platform": "Android",
+    "content": "Fix lỗi crash app"
+  },
+  {
+    "id": 4,
+    "platform": "Android",
+    "content": "fix lỗi"
+  },
+  {
+    "id": 5,
+    "platform": "Android",
+    "content": "fix lỗi crash khi mở ảnh"
+  },
+  {
+    "id": 6,
+    "platform": "Android",
+    "content": "Fix lỗi ABC"
+  },
+  {
+    "id": 7,
+    "platform": "iOS",
+    "content": "Fix lỗi DEF"
+  },
+  {
+    "id": 8,
+    "platform": "Android",
+    "content": "fix lỗi 123333"
+  },
+  {
+    "id": 9,
+    "platform": "Web",
+    "content": "crash app khi nhận file"
+  },
+  {
+    "id": 10,
+    "platform": "web",
+    "content": "không tải được hình ảnh"
+  },
+  {
+    "id": 11,
+    "platform": "web",
+    "content": "không hiển thị tin nhắn mới"
+  },
+  {
+    "id": 12,
+    "platform": "BE",
+    "content": "không xoá được tin nhắn"
+  },
+  {
+    "id": 13,
+    "platform": "BE",
+    "content": "không search được"
+  }
+]
