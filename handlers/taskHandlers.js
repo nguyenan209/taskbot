@@ -34,7 +34,7 @@ const taskHandlers = {
 
       bot.sendMessage(
         msg.chat.id,
-        `✅ Đã thêm task [${platform}]: *${content}* (ID: ${newId})`,
+        `✅ Đã thêm task cho ${platform}: [${content}] (ID: ${newId})`,
         { parse_mode: "Markdown" }
       );
     } catch (err) {

@@ -17,11 +17,11 @@ app.get("/", (req, res) => {
   return res.send({ message: "Welcome to an's bot" });
 });
 
-bot.onText(/^Add: (Android|iOS|Web|BE) (.+)/i, (msg, match) => {
+bot.onText(/^\/Add: (Android|iOS|Web|BE) (.+)/i, (msg, match) => {
   taskHandlers.addTask(msg, match[1], match[2], bot);
 });
 
-bot.onText(/^Done: (\d+)/i, (msg, match) => {
+bot.onText(/^\/Done: (\d+)/i, (msg, match) => {
   taskHandlers.deleteTaskById(msg, parseInt(match[1]), bot);
 });
 
@@ -39,25 +39,25 @@ bot.onText(/^\/help/, (msg) => {
 
 ✅ *Thêm Task*  
 _Gửi:_  
-\`Task: [Android/iOS/Web/BE] Nội dung task\`  
+\`/Add: [Android/iOS/Web/BE] Nội dung task\`  
 _Ví dụ:_  
-\`Task: Android Fix lỗi login\`  
+\`/Add: Android Không hiển thị tên\`  
 
 ✅ *Xóa Task*  
 _Gửi:_  
-\`Done: [ID task]\`  
+\`/Done: [ID task]\`  
 _Ví dụ:_  
-\`Done: 3\`  
+\`/Done: 3\`  
 
 ✅ *Xem danh sách Task còn lại*  
 _Gửi:_  
 \`/tasks\` hoặc \`/task\`  
 
 ✅ *Xem Task theo nền tảng*  
-\`Task Android\` – Xem danh sách Task Android  
-\`Task iOS\` – Xem danh sách Task iOS  
-\`Task Web\` – Xem danh sách Task Web  
-\`Task BE\` – Xem danh sách Task Backend  
+\`/Android\` – Xem danh sách Task Android  
+\`/iOS\` – Xem danh sách Task iOS  
+\`/Web\` – Xem danh sách Task Web  
+\`/BE\` – Xem danh sách Task Backend  
 
 📌 *Liên hệ Admin nếu cần thêm tính năng!* 🚀  
 `;
