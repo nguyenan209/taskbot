@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   return res.send({ message: "Welcome to an's bot" });
 });
 
-bot.onText(/^Task: (Android|iOS|Web|BE) (.+)/i, (msg, match) => {
+bot.onText(/^Add: (Android|iOS|Web|BE) (.+)/i, (msg, match) => {
   taskHandlers.addTask(msg, match[1], match[2], bot);
 });
 
